@@ -1,6 +1,6 @@
 package skillcalculator.domain.model;
 
 public enum SkillTypeEnum {
-	OPAK, STANDART, VERFOLGEN, PASSIV;
+	OPAK, STANDART, VERFOLGEN, PASSIV, GEIST;
 
 }

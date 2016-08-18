@@ -1,0 +1,4 @@
+/modules/skillcalculator-core/target/
+/modules/skillcalculator-domain/target/
+/modules/skillcalculator-service/target/
+/modules/skillcalculator-web/target/
