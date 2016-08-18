@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2457" started-at="2016-08-18T13:17:54Z" finished-at="2016-08-18T13:17:56Z">
+  <suite name="Default suite" duration-ms="2422" started-at="2016-08-18T13:38:19Z" finished-at="2016-08-18T13:38:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2457" started-at="2016-08-18T13:17:54Z" finished-at="2016-08-18T13:17:56Z">
+    <test name="Default test" duration-ms="2422" started-at="2016-08-18T13:38:19Z" finished-at="2016-08-18T13:38:22Z">
       <class name="skillcalculator.service.character.test.CharacterServiceTest">
-        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="16" started-at="2016-08-18T15:17:54Z" finished-at="2016-08-18T15:17:54Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="6" started-at="2016-08-18T15:38:19Z" finished-at="2016-08-18T15:38:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="2181" started-at="2016-08-18T15:17:54Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2016-08-18T15:17:56Z">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="2161" started-at="2016-08-18T15:38:19Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2016-08-18T15:38:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2016-08-18T15:17:56Z" finished-at="2016-08-18T15:17:56Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2016-08-18T15:38:21Z" finished-at="2016-08-18T15:38:21Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="characterCreationTest()[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="characterCreationTest" duration-ms="240" started-at="2016-08-18T15:17:56Z" finished-at="2016-08-18T15:17:56Z">
+        <test-method status="PASS" signature="characterCreationTest()[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="characterCreationTest" duration-ms="240" started-at="2016-08-18T15:38:21Z" finished-at="2016-08-18T15:38:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- characterCreationTest -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2016-08-18T15:17:56Z" finished-at="2016-08-18T15:17:56Z">
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2016-08-18T15:38:22Z" finished-at="2016-08-18T15:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2016-08-18T15:38:22Z" finished-at="2016-08-18T15:38:22Z">
           <params>
             <param index="0">
               <value>
@@ -41,10 +45,6 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:skillcalculator.service.character.test.CharacterServiceTest@369f73a2]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2016-08-18T15:17:56Z" finished-at="2016-08-18T15:17:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestClass -->
       </class> <!-- skillcalculator.service.character.test.CharacterServiceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
