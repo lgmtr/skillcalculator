@@ -17,6 +17,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -31,8 +32,11 @@ public class Skill implements Serializable {
 	private long id;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "character", nullable = false)
+	@JoinColumn(name = "character")
 	private NarutoCharacter character;
+	
+	@OneToOne(fetch=FetchType.EAGER, mappedBy="skill")
+	private VertrauterGeist geist;
 	
 	@Column(name = "NAME", nullable = false)
 	private String name;

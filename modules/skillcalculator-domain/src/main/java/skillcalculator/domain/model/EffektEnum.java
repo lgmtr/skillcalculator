@@ -5,6 +5,8 @@ public enum EffektEnum {
 	HS("Hohes Schweben", "C", "", ""),
 	F("Fallen", "C", "", ""),
 	Z("Zurückschlagen", "C", "", ""),
+	C5("5er-Combo", "C", "", ""),
+	C10("5er-Combo", "C", "", ""),
 	VERGIFTEN("fügt Schaden zu, kann 4 mal addiert werden", "N", "", "1+"),
 	ENTFLAMMEN("fügt Schaden zu, Verhindert Heilung", "N", "", "1"),
 	SCHLAF("kann durch Tai-Jutsu vor Rundenende aufgehoben werden", "N", "", "1"),
