@@ -1,4 +1,6 @@
 /modules/skillcalculator-core/target/
 /modules/skillcalculator-domain/target/
 /modules/skillcalculator-service/target/
+/modules/skillcalculator-domain/test-output/
+/modules/skillcalculator-service/test-output/
 /modules/skillcalculator-web/target/
