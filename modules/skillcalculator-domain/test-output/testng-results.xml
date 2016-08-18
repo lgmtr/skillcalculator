@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2164" started-at="2016-08-18T10:58:26Z" finished-at="2016-08-18T10:58:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2164" started-at="2016-08-18T10:58:26Z" finished-at="2016-08-18T10:58:28Z">
+      <class name="skillcalculator.domain.test.SimleDBTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:skillcalculator.domain.test.SimleDBTest@369f73a2]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="7" started-at="2016-08-18T12:58:26Z" finished-at="2016-08-18T12:58:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:skillcalculator.domain.test.SimleDBTest@369f73a2]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="2046" started-at="2016-08-18T12:58:26Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2016-08-18T12:58:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:skillcalculator.domain.test.SimleDBTest@369f73a2]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2016-08-18T12:58:28Z" finished-at="2016-08-18T12:58:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void skillcalculator.domain.test.SimleDBTest.createNaruto()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="createNaruto()[pri:0, instance:skillcalculator.domain.test.SimleDBTest@369f73a2]" name="createNaruto" duration-ms="99" started-at="2016-08-18T12:58:28Z" finished-at="2016-08-18T12:58:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNaruto -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:skillcalculator.domain.test.SimleDBTest@369f73a2]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2016-08-18T12:58:28Z" finished-at="2016-08-18T12:58:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:skillcalculator.domain.test.SimleDBTest@369f73a2]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2016-08-18T12:58:28Z" finished-at="2016-08-18T12:58:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void skillcalculator.domain.test.SimleDBTest.createNaruto()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- skillcalculator.domain.test.SimleDBTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
