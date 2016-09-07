@@ -7,28 +7,28 @@
 	<ui:define name="metadata">
 	</ui:define>
 	<ui:define name="content">
-		<p:dataTable var="char" value="#{charOverviewBean.narutoCharList}">
+		<p:dataTable var="naruChar" value="#{charOverviewBean.narutoCharList}">
         <f:facet name="header">
-            Expand rows to see detailed information
+            Charakterübersicht
         </f:facet>
         <p:column style="width:16px">
             <p:rowToggler />
         </p:column>
         <p:column headerText="Name">
-            <h:outputText value="#{char.name}" />
+            <h:outputText value="#{naruChar.name}" />
         </p:column>
         <p:column headerText="Stars">
-            <h:outputText value="#{char.stars}" />
+            <h:outputText value="#{naruChar.stars}" />
         </p:column>
  
         <p:rowExpansion>
             <p:panelGrid  columns="2" columnClasses="label,value" style="width:300px">
  
                 <h:outputText value="Id:" />
-                <h:outputText value="#{char.name}" />
+                <h:outputText value="#{naruChar.name}" />
  
                 <h:outputText value="Year" />
-                <h:outputText value="#{char.stars}" />
+                <h:outputText value="#{naruChar.stars}" />
 
             </p:panelGrid>
         </p:rowExpansion>
