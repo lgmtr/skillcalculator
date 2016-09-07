@@ -1,0 +1,37 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/templates/template.xhtml">
+	<ui:define name="metadata">
+	</ui:define>
+	<ui:define name="content">
+		<p:dataTable var="char" value="#{charOverviewBean.narutoCharList}">
+        <f:facet name="header">
+            Expand rows to see detailed information
+        </f:facet>
+        <p:column style="width:16px">
+            <p:rowToggler />
+        </p:column>
+        <p:column headerText="Name">
+            <h:outputText value="#{char.name}" />
+        </p:column>
+        <p:column headerText="Stars">
+            <h:outputText value="#{char.stars}" />
+        </p:column>
+ 
+        <p:rowExpansion>
+            <p:panelGrid  columns="2" columnClasses="label,value" style="width:300px">
+ 
+                <h:outputText value="Id:" />
+                <h:outputText value="#{char.name}" />
+ 
+                <h:outputText value="Year" />
+                <h:outputText value="#{char.stars}" />
+
+            </p:panelGrid>
+        </p:rowExpansion>
+    </p:dataTable>
+	</ui:define>
+</ui:composition>

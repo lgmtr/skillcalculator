@@ -23,25 +23,6 @@
             org.springframework.web.context.request.RequestContextListener
         </listener-class>
     </listener>
-
-	<!-- Spring Security -->
-    <!-- <filter>
-		<filter-name>springSecurityFilterChain</filter-name>
-		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-		<init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value></param-value>
-        </init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>springSecurityFilterChain</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-  	
-  	<context-param>
-		<param-name>javax.faces.FACELETS_SKIP_COMMENTS</param-name>
-		<param-value>true</param-value>
-	</context-param> -->
   	
   	<!-- Change to "Production" when you are ready to deploy -->
 	<context-param>
@@ -60,11 +41,6 @@
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
- 
- 	<!-- <error-page>
-        <exception-type>org.springframework.security.access.AccessDeniedException</exception-type>
-        <location>/faces/login.xhtml</location>
-	</error-page> -->
  
 	<!-- Map these files with JSF -->
 	<servlet-mapping>
