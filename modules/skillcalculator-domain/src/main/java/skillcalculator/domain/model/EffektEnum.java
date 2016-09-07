@@ -47,4 +47,11 @@ public enum EffektEnum {
 	public String getDauer(){
 		return dauer;
 	}
+	
+	public static EffektEnum getEnumWithName(String name) {
+		for(EffektEnum effektEnum : EffektEnum.values())
+			if(effektEnum.name().equals(name))
+				return effektEnum;
+		return null;
+	}
 }

@@ -44,17 +44,20 @@ public class Skill implements Serializable {
 	@Enumerated(EnumType.ORDINAL)
 	private SkillTypeEnum skillTypeEnum;
 	
-	@ElementCollection(targetClass = EffektEnum.class)
+	@ElementCollection(fetch = FetchType.EAGER, targetClass = EffektEnum.class)
 	@CollectionTable(name = "EFFEKT_VERFOLGEN", joinColumns = @JoinColumn(name = "SKILL_ID"))
 	@Enumerated(EnumType.ORDINAL)
 	@Column(name = "VERFOLGEN")
 	private Set<EffektEnum> effektEnumVerfolgen = new HashSet<>(0);
 	
-	@ElementCollection(targetClass = EffektEnum.class)
+	@ElementCollection(fetch = FetchType.EAGER, targetClass = EffektEnum.class)
 	@CollectionTable(name = "EFFEKT_AUSLOESEN", joinColumns = @JoinColumn(name = "SKILL_ID"))
 	@Enumerated(EnumType.ORDINAL)
 	@Column(name = "AUSLOESEN")
 	private Set<EffektEnum> effektEnumAusloesen = new HashSet<>(0);
+	
+	@Column(name = "ANZ_AUSLOESEN", nullable = false)
+	private int anzAusloesen;
 
 	public NarutoCharacter getCharacter() {
 		return character;
@@ -102,6 +105,14 @@ public class Skill implements Serializable {
 
 	public void setBeschreibung(String beschreibung) {
 		this.beschreibung = beschreibung;
+	}
+
+	public int getAnzAusloesen() {
+		return anzAusloesen;
+	}
+
+	public void setAnzAusloesen(int anzAusloesen) {
+		this.anzAusloesen = anzAusloesen;
 	}
 
 }

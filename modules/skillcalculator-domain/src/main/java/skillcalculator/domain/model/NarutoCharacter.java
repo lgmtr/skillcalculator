@@ -18,9 +18,12 @@ import javax.persistence.Table;
 public class NarutoCharacter implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
+	
 	@Id
-	@Column(name = "name", unique = true, nullable = false, length = 45)
+	@Column(name = "id", unique = true, nullable = false, length = 45)
+	private String id;
+
+	@Column(name = "name", nullable = false, length = 45)
 	private String name;
 	
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "character", cascade=CascadeType.REMOVE)
@@ -28,7 +31,22 @@ public class NarutoCharacter implements Serializable {
 	
 	@Column(name = "stars", nullable = false)
 	private int stars;
+	
+	public NarutoCharacter(String name, int stars, Set<Skill> skills) {
+		this.id = name + "_" + stars;
+		this.name = name;
+		this.stars = stars;
+		this.skill = skills;
+	}
+	
+	public NarutoCharacter(String name, int stars) {
+		this(name, stars, new HashSet<Skill>(0));
+	}
 
+	public NarutoCharacter() {
+		this("", 0, new HashSet<Skill>(0));
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -51,6 +69,14 @@ public class NarutoCharacter implements Serializable {
 
 	public void setStars(int stars) {
 		this.stars = stars;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 }

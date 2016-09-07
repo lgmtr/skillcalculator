@@ -27,9 +27,7 @@ public class SimleDBTest extends AbstractTestNGSpringContextTests {
 
 	@Test
 	public void createNaruto() {
-		NarutoCharacter naruto = new NarutoCharacter();
-		naruto.setName("Naruto");
-		naruto.setStars(1);
+		NarutoCharacter naruto = new NarutoCharacter("Naruto", 1);
 		Skill skill1 = new Skill();
 		skill1.setName("Schattendoppelgänger-Jutsu");
 		skill1.setSkillTypeEnum(SkillTypeEnum.OPAK);

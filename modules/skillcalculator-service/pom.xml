@@ -8,8 +8,16 @@
 		<relativePath>../..</relativePath>
 	</parent>
 	<artifactId>skillcalculator-service</artifactId>
+	<properties>
+		<net.sf.opencsv>2.3</net.sf.opencsv>
+	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>${net.sf.opencsv}</version>
+		</dependency>
 		<!-- skillcalculator -->
 		<dependency>
 			<groupId>de.ags.naruto</groupId>
