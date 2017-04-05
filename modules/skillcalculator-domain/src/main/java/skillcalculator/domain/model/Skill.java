@@ -17,6 +17,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -33,11 +34,18 @@ public class Skill implements Serializable {
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "character")
 	private NarutoCharacter character;
+	
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "main")
+	private MainCharacter main;
+	
+	@OneToOne(fetch=FetchType.EAGER, mappedBy="skill")
+	private PetModel pet;
 
 	@Column(name = "NAME", nullable = false)
 	private String name;
 	
-	@Column(name = "BESCHREIBUNG", nullable = false)
+	@Column(name = "BESCHREIBUNG", nullable = true)
 	private String beschreibung;
 	
 	@Column(name = "SKILL_TYPE", nullable = false)
@@ -58,6 +66,9 @@ public class Skill implements Serializable {
 	
 	@Column(name = "ANZ_AUSLOESEN", nullable = false)
 	private int anzAusloesen;
+	
+	@Column(name = "ERSETZT_STD")
+	private boolean eSTD;
 
 	public NarutoCharacter getCharacter() {
 		return character;
@@ -113,6 +124,30 @@ public class Skill implements Serializable {
 
 	public void setAnzAusloesen(int anzAusloesen) {
 		this.anzAusloesen = anzAusloesen;
+	}
+
+	public boolean iseSTD() {
+		return eSTD;
+	}
+
+	public void seteSTD(boolean eSTD) {
+		this.eSTD = eSTD;
+	}
+
+	public MainCharacter getMain() {
+		return main;
+	}
+
+	public void setMain(MainCharacter main) {
+		this.main = main;
+	}
+
+	public PetModel getPet() {
+		return pet;
+	}
+
+	public void setPet(PetModel pet) {
+		this.pet = pet;
 	}
 
 }

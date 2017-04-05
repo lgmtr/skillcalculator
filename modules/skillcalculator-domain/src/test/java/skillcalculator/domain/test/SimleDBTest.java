@@ -36,7 +36,7 @@ public class SimleDBTest extends AbstractTestNGSpringContextTests {
 		skill1.setCharacter(naruto);
 		Skill skill2 = new Skill();
 		skill2.setName("Tai-Jutsu-Angriff");
-		skill2.setSkillTypeEnum(SkillTypeEnum.STANDART);
+		skill2.setSkillTypeEnum(SkillTypeEnum.STANDARD);
 		Set<EffektEnum> effektSetS1 = new HashSet<EffektEnum>();
 		effektSetS1.add(EffektEnum.TS);
 		skill2.setEffektEnumAusloesen(effektSetS1);

@@ -15,7 +15,11 @@ public enum EffektEnum {
 	SIEGELPUNKT("Verhindert Opak-Verwendung für 3 Runden", "N", "", "3"),
 	VERWIRRUNG("Verhindert das einsetzten von Opaken, lässt betroffenen Ninja Verbündete angreifen", "N", "", "1"),
 	HIMMELSVERLIES("Betroffener Ninja erleidet bei der Verwendung seines Opak's Schaden", "N", "", "1"),
-	MARKIERUNG("-30% Verteidigung, markiert, Gelegentlich Opak-Vorraussetzung", "N", "", "1");
+	MARKIERUNG("-30% Verteidigung, markiert, Gelegentlich Opak-Vorraussetzung", "N", "", "1"),
+	UNTERBRECHUNG("Verhindert Opak-Verwendung für 1 Runden", "N", "", "1"),
+	HEILUNG("Heilt sich oder Verbündete", "N", "", "1"),
+	WIEDERBELEBUNG("Belebebt einen Verbündeten wieder", "N", "", "1"),
+	AUFERSTEHUNG("Wiederauferstehung von den Toten", "N", "", "1");
 	
 	private String desc;
 

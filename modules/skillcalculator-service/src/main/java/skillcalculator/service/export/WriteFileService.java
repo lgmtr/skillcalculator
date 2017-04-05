@@ -2,6 +2,7 @@ package skillcalculator.service.export;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Serializable;
 import java.io.Writer;
 import java.util.List;
 
@@ -15,7 +16,9 @@ import skillcalculator.domain.model.Skill;
 import skillcalculator.service.character.CharacterService;
 
 @Service
-public class WriteFileService {
+public class WriteFileService implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private static final String DEFAULT_SEPERATOR = ";";
 

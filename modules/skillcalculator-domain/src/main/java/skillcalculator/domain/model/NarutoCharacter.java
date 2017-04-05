@@ -32,6 +32,8 @@ public class NarutoCharacter implements Serializable {
 	@Column(name = "stars", nullable = false)
 	private int stars;
 	
+	private boolean isMain;
+	
 	public NarutoCharacter(String name, int stars, Set<Skill> skills) {
 		this.id = name + "_" + stars;
 		this.name = name;
@@ -77,6 +79,14 @@ public class NarutoCharacter implements Serializable {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public boolean isMain() {
+		return isMain;
+	}
+
+	public void setMain(boolean isMain) {
+		this.isMain = isMain;
 	}
 
 }

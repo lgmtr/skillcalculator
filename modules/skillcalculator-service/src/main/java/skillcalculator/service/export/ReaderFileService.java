@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,7 +20,9 @@ import skillcalculator.service.character.CharacterService;
 import au.com.bytecode.opencsv.CSVReader;
 
 @Service
-public class ReaderFileService {
+public class ReaderFileService implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private static final char DEFAULT_SEPERATOR = ';';
 
@@ -67,6 +70,7 @@ public class ReaderFileService {
 					Set<Skill> skills = narutoCharacter.getSkill();
 					if(skills == null || skills.size() == 0)
 						skills = new HashSet<>();
+					skill.seteSTD(Boolean.parseBoolean(nextLine[11]));
 					skills.add(skill);
 					narutoCharacter.setSkill(skills);
 					characterService.addCharReader(narutoCharacter);

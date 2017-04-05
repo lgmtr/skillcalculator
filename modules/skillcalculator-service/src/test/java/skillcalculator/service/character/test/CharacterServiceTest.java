@@ -1,7 +1,6 @@
 package skillcalculator.service.character.test;
 
 import java.io.File;
-import java.util.List;
 import java.util.Set;
 
 import javax.annotation.Resource;
@@ -11,7 +10,6 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Test;
 
 import skillcalculator.domain.model.EffektEnum;
-import skillcalculator.domain.model.NarutoCharacter;
 import skillcalculator.domain.model.Skill;
 import skillcalculator.domain.model.SkillTypeEnum;
 import skillcalculator.service.character.CharacterService;
@@ -36,7 +34,7 @@ public class CharacterServiceTest extends AbstractTestNGSpringContextTests {
 				characterService.createEffektSet(), characterService.createEffektSet(), 1);
 		Skill skillN2 = characterService.createSkill("Tai-Jutsu-Angriff",
 				"Greift den direkt gegenüberstehenden Gegner an, löst mit einer giwissen Wahrscheinlichkeit eine 3er-Combo aus und verursacht "
-						+ "Tiefes Schweben.", SkillTypeEnum.STANDART, characterService.createEffektSet(), characterService.createEffektSet(EffektEnum.TS), 1);
+						+ "Tiefes Schweben.", SkillTypeEnum.STANDARD, characterService.createEffektSet(), characterService.createEffektSet(EffektEnum.TS), 1);
 		Skill skillN3 = characterService.createSkill("Oiroke-no-Jutsu",
 				"Wird zu Kampfbeginn angewendet, vermindert den Widerstand von bis zu 4 männlichen Gegnern.", SkillTypeEnum.PASSIV,
 				characterService.createEffektSet(), characterService.createEffektSet(), 1);
@@ -50,7 +48,7 @@ public class CharacterServiceTest extends AbstractTestNGSpringContextTests {
 				characterService.createEffektSet(), characterService.createEffektSet(), 1);
 		Skill skillS2 = characterService.createSkill("Tai-Jutsu-Angriff",
 				"Greift den direkt gegenüberstehenden Gegner an, löst mit einer giwissen Wahrscheinlichkeit eine 3er-Combo aus und verursacht "
-						+ "Tiefes Schweben.", SkillTypeEnum.STANDART, characterService.createEffektSet(), characterService.createEffektSet(EffektEnum.TS), 1);
+						+ "Tiefes Schweben.", SkillTypeEnum.STANDARD, characterService.createEffektSet(), characterService.createEffektSet(EffektEnum.TS), 1);
 		Skill skillS3 = characterService.createSkill("Zusammenspielende Löwen",
 				"Verfolgt von tiefem Schweben betroffene Gegner und verursacht Zurückschlagen, Gegner hinter zurückgeschlagenen Ninjas erleiden Schaden.",
 				SkillTypeEnum.VERFOLGEN, characterService.createEffektSet(EffektEnum.TS), characterService.createEffektSet(EffektEnum.Z), 1);
@@ -59,10 +57,6 @@ public class CharacterServiceTest extends AbstractTestNGSpringContextTests {
 				characterService.createEffektSet(EffektEnum.C10), characterService.createEffektSet(), 1);
 		Set<Skill> skillsS = characterService.createSkills(skillS1, skillS2, skillS3, skillS4);
 		characterService.addCharacter("Sasuke", 1, skillsS);
-		List<NarutoCharacter> characterList = characterService.getAllCharacters();
-		for (NarutoCharacter narutoCharacter : characterList) {
-			System.out.println(narutoCharacter.getName());
-		}
 	}
 
 	@Test
